@@ -17,9 +17,11 @@ body {
 
 .navigation ul {
     display: flex;
-    
     list-style: none;
-    
+}
+
+.navigation ul a:hover {
+    border-bottom: 2px solid white;
 }
 
 .navigation ul li {
