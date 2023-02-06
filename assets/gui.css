@@ -20,7 +20,7 @@ body {
     list-style: none;
 }
 
-.navigation ul a:hover {
+.navigation ul li a:hover{
     border-bottom: 2px solid white;
 }
 
