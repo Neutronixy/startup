@@ -15,12 +15,17 @@ body {
     padding-left: 5%;
 }
 
-.navigation ul {
-    display: flex;
+.navigation ul li a {
     list-style: none;
+    text-decoration: none;
+    color: inherit;
+    float: right;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
-.navigation ul li a:hover{
+.navigation ul li:hover {
     border-bottom: 2px solid white;
 }
 
