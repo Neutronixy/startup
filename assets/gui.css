@@ -71,17 +71,21 @@ body {
     .landingimg, .toplogo, .start{
         width: 50%;
     }
+
+    .disappear {
+        display: none;
+    }
 }
 
 .explenation {
     background-color: #2a1d42;
+    padding-top: 60px;
 }
 
-.explenation > * {
-    display: flex;
-    justify-content: center;
-}
-
-.footer {
+.mypadding {
     padding: 20px;
+}
+
+.mypadding h2, .mypadding p, .mypadding h1 {
+    padding-bottom: 20px;
 }
