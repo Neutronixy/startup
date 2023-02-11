@@ -29,8 +29,9 @@ body {
     border-bottom: 2px solid white;
 }
 
-.navigation ul li {
+.navigation ul {
     font-family: Arial, Helvetica, sans-serif;
+    white-space: nowrap;
 }
 
 .navigation ul li, .start {
@@ -62,6 +63,24 @@ body {
 
 .start:hover {opacity: 0.8}
 
+.explenation {
+    background-color: #2a1d42;
+    padding-top: 40px;
+}
+
+.mypadding {
+    padding: 20px;
+}
+
+.morepadding {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.mypadding h2, .mypadding p, .mypadding h1 {
+    padding-bottom: 20px;
+}
+
 @media only screen and (max-width: 719px) {
     .center {
         display: flex;
@@ -72,20 +91,38 @@ body {
         width: 50%;
     }
 
+    div > .landingimg {
+        height: 330px;
+        overflow: hidden;
+    }
+
+    .landingimg {
+        object-fit: cover;
+        object-position: 50% 0%;
+    }
+
+    .hlanding {
+        padding: 3% 0%;
+        text-align: center;
+    }
+
     .disappear {
         display: none;
     }
+
+    .explenation {
+        padding-top: 0px;
+    }
+    
+    .lesspadding, h2.lesspadding {
+        padding-bottom: 0px;
+    }
 }
 
-.explenation {
-    background-color: #2a1d42;
-    padding-top: 60px;
-}
-
-.mypadding {
-    padding: 20px;
-}
-
-.mypadding h2, .mypadding p, .mypadding h1 {
-    padding-bottom: 20px;
+@media only screen and (max-width: 485px) {
+    .navigation ul, .navigation ul li a {
+        white-space: normal;
+        text-align: center;
+        float: none;
+    }
 }
